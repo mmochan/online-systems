@@ -1,0 +1,13 @@
+image_resource:
+  type: docker-image
+  source:
+    repository: ansible/ubuntu14.04-ansible
+    tag: stable
+
+platform: linux
+
+inputs:
+  - name: ansible-test
+
+run:
+  path: ./ansible-test/ci/test.sh

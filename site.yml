@@ -1,0 +1,28 @@
+---
+- name: Ansible Concourse Example
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  
+  tasks:
+
+  - name: Do you work
+    debug: msg="YAH it Works"
+
+  # - name: Install boto
+  #   command: pip list
+
+  - name: WHere am I
+    command: ls -al  
+    register: output  
+
+  - name: Print output
+    debug: msg="{{output}}"
+
+  # - name: Gather EC2 facts
+  #   ec2_remote_facts:
+  #     region: ap-southeast-2
+  #   register: ec2_instances
+
+  # - name: Print facts
+  #   debug: msg="{{ec2_instances}}"

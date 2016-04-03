@@ -1,0 +1,1 @@
+./concourse web --basic-auth-username root  --basic-auth-password xxxxx   --session-signing-key session_signing_key   --tsa-host-k host_key   --tsa-authorized-keys authorized_worker_keys --worker-garden-url 52.63.19.248:7000 --external-url http://52.63.19.248:8080

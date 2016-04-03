@@ -1,0 +1,1 @@
+./concourse worker   --work-dir /opt/concourse/worker --tsa-host 52.63.19.248 --tsa-public-key host_key.pub --tsa-worker-private-key worker_y --baggageclaim-bind-ip=172.31.25.55

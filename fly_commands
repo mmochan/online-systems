@@ -31,9 +31,9 @@
 10994  ls -al ~/.flyrc
 10997  fly -t ci login -c http://52.63.125.45:8080/
 11000  fly -t ci login -h
-11003  fly -t ci login -u root -p Harley5022
+11003  fly -t ci login -u root -p xxxx
 11008  fly -t ci login
-11010  fly -t ci login -u root -p Harley5022 http://52.63.125.45:8080
+11010  fly -t ci login -u root -p xxxxxx http://52.63.125.45:8080
 11012  fly -t ci sync
 11018  fly -t ci login  http://52.63.125.45:8080
 11019  xfly -t ci execute -c build.yml

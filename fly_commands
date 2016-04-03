@@ -1,0 +1,83 @@
+10805* fly set-pipeline
+10807* chmod +x fly
+10808* ./fly set-pipeline
+10815* fly -t lite set-pipeline -p really-cool-pipeline -c pipeline.yml
+10816* fly -t lite get-pipeline -p really-cool-pipeline
+10818* fly -t lite set-pipeline -p really-cool-pipeline -c navi-pipeline.yml
+10823* ./fly -t lite login -c http://192.168.100.4:8080
+10824* fly -t example sync
+10827* ./fly -t lite set-pipeline -p really-cool-pipeline -c navi-pipeline.yml
+10830* ./fly -t lite set-pipeline -p vpc-management-pipeline -c -vpc-pipeline.yml
+10831* ./fly -t lite set-pipeline -p vpc-management-pipeline -c vpc-pipeline.yml
+10838* ./fly -t lite set-pipeline -p online-systems-pipeline -c onlinesystems-pipeline.yml
+10840* fly -t lite pipelines
+10841* fly -t lite  unpause-pipeline --pipeline online-systems-pipeline
+10842* fly -t lite containers
+10843* fly -t lite volumes
+10844* fly -t lite  builds
+10882  install fly
+10883* install fly /usr/local/bin
+10884  which fly
+10892  fly -t lite login -c http://192.168.100.4:8080
+10893  fly -t ci login -c http://192.168.100.4:8080
+10896  fly -t ci execute
+10907  fly -t ci execute -c flight-school/build.yml
+10973  rm  ~/Downloads/fly*
+10974  ls -ltr ~/Downloads/fly*
+10975  scp ~/Downloads/fly ubuntu@52.63.125.45:.
+10978  fly -t ci login -c http://52.63.125.45:8080
+10989  fly -t fly login -c http://52.63.125.45:8080
+10990  fly -t fly sync
+10994  ls -al ~/.flyrc
+10997  fly -t ci login -c http://52.63.125.45:8080/
+11000  fly -t ci login -h
+11003  fly -t ci login -u root -p Harley5022
+11008  fly -t ci login
+11010  fly -t ci login -u root -p Harley5022 http://52.63.125.45:8080
+11012  fly -t ci sync
+11018  fly -t ci login  http://52.63.125.45:8080
+11019  xfly -t ci execute -c build.yml
+11042  rm ~/.flyrc
+11044  fly -t ci login -c  http://52.63.173.11:8080
+11045  fly -t ci login -c  http://52.62.173.11:8080
+11046  fly -t ci login  http://52.63.173.11:8080
+11065  fly -t ci set-pipeline -p flight-school -c ci/pipeline.yml
+11105  fly -t ci set-pipeline -p ansible-test -c ci/pipeline.yml
+11121  fly containers
+11123  fly -t ci workers
+11124  fly -t ci builds
+11126  fly -t ci watch
+11129  fly -t ci up
+11130  fly -t ci up -p ansible-test
+11134  historyt |grep fly
+11156  fly -t ci dp -p ansible
+11157  fly -h
+11158  fly -t ci uj
+11163  fly -t ci set-pipeline -p ansible -c ci/pipeline.yml
+11182  histroy |grep fly
+11187  fly -t ci destroy-pipeline --piupeline ansible
+11188  fly -t ci destroy-pipeline --pipeline ansible
+11192  vi ~/.flyrc
+11198  fly -t ci login -c  http://52.62.19.248:8080
+11199  fly -t ci login -c  http://52.63.19.248:8080
+11200  fly -t ci ps
+11266  fly -t ci pipelines
+11267  fly -t ci dp online-systems
+11268  fly -t ci dp --pipeline online-systems
+11269  fly -t ci dp --pipeline ansible-test
+11270  fly -t ci dp --pipeline flight-school
+11276  history _grep fly
+11287  fly -t ci execute -c build.yml
+11294  fly
+11295  history |grep fly
+11297  fly -t ci tj
+11298  fly -t ci tj --job VPC
+11299  fly -t ci tj -j VPC
+11300  fly -t ci tj
+11301  fly -t ci tj -j=VPC
+11302  fly -t ci -h
+11303  fly -t ci cs
+11304  fly -t ci destroy-pipeline
+11305  fly -t ci destroy-pipeline --pipeline online-systems
+11312  fly -t ci set-pipeline -p online-systems -c ci/pipeline.yml
+11316  fly -t ci containers

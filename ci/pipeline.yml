@@ -59,5 +59,46 @@ jobs:
   - get: online-systems
     trigger: true    
   - task: tests
-    file: online-systems/build.yml             
-
+    file: online-systems/build.yml     
+- name: Nginx Server
+  plan:
+  - get: online-systems
+    trigger: true    
+  - task: tests
+    file: online-systems/build.yml                 
+- name: WildFly Domain Controllers
+  plan:
+  - get: online-systems
+    trigger: true    
+  - task: tests
+    file: online-systems/build.yml                 
+- name: WildFly Public Slaves
+  plan:
+  - get: online-systems
+    trigger: true    
+  - task: tests
+    file: online-systems/build.yml                     
+- name: RDS
+  plan:
+  - get: online-systems
+    trigger: true    
+  - task: tests
+    file: online-systems/build.yml                     
+- name: Elastic Load Balancers
+  plan:
+  - get: online-systems
+    trigger: true    
+  - task: tests
+    file: online-systems/build.yml                         
+- name: S3 Buckets
+  plan:
+  - get: online-systems
+    trigger: true    
+  - task: tests
+    file: online-systems/build.yml                             
+- name: Identity and Access Management
+  plan:
+  - get: online-systems
+    trigger: true    
+  - task: tests
+    file: online-systems/build.yml     

@@ -2,6 +2,6 @@
 
 set -e -x
 
-pushd ansible-test
+pushd online-systems
   ansible-playbook site.yml
 popd

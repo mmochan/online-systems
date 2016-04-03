@@ -2,7 +2,7 @@ resources:
 - name: online-systems
   type: git
   source:
-    uri: https://github.com/mmochan/ansible-test
+    uri: https://github.com/mmochan/online-systems
     branch: master
 
 jobs:
@@ -11,53 +11,53 @@ jobs:
   - get: online-systems
     trigger: true    
   - task: tests
-    file: ansible-test/build.yml
+    file: online-systems/build.yml
 - name: Virtual Private Gateways
   plan:
   - get: online-systems
     trigger: true    
   - task: tests
-    file: ansible-test/build.yml    
+    file: online-systems/build.yml    
 - name: Customer Gateways
   plan:
   - get: online-systems
     trigger: true    
   - task: tests
-    file: ansible-test/build.yml        
+    file: online-systems/build.yml        
 - name: VPC Endpoints
   plan:
   - get: online-systems
     trigger: true    
   - task: tests
-    file: ansible-test/build.yml    
+    file: online-systems/build.yml    
 - name: Subnets
   plan:
   - get: online-systems
     trigger: true    
   - task: tests
-    file: ansible-test/build.yml    
+    file: online-systems/build.yml    
 - name: Peering Connections
   plan:
   - get: online-systems
     trigger: true    
   - task: tests
-    file: ansible-test/build.yml       
+    file: online-systems/build.yml       
 - name: Network ACLS
   plan:
   - get: online-systems
     trigger: true    
   - task: tests
-    file: ansible-test/build.yml   
+    file: online-systems/build.yml   
 - name: Route Tables
   plan:
   - get: online-systems
     trigger: true    
   - task: tests
-    file: ansible-test/build.yml       
+    file: online-systems/build.yml       
 - name: Security Groups
   plan:
   - get: online-systems
     trigger: true    
   - task: tests
-    file: ansible-test/build.yml             
+    file: online-systems/build.yml             
 

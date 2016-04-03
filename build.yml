@@ -10,4 +10,4 @@ inputs:
   - name: online-systems
 
 run:
-  path: ./ansible-test/ci/test.sh
+  path: ./online-systems/ci/test.sh
